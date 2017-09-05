@@ -1,0 +1,109 @@
+#highscores img {
+    width: 50%;
+    height: 50%;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: height 0.35s ease 1s linear;
+  -moz-transition: height 0.35s ease 1s linear;
+  -o-transition: height 0.35s ease 1s linear;
+  -ms-transition: height 0.35s ease 1s linear;
+  transition: height 0.35s ease 1s linear;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+.active {
+	font-weight: bold;
+}
+.nav-07 {
+	background: transparent; 
+	float: none; 
+	display: inline-block; 
+	border-top: solid; 
+	border-bottom: solid; 
+	border-color: #83714d;
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 887px) 
+and (orientation : portrait) {
+
+	#highscores img {
+        width: 150%;
+        height: 150%;
+    }
+	
+	html {
+		background: url('/img/back.jpg') repeat-y top center;
+		background-size: cover;
+		text-align: center!important;
+	}
+	.wrapper-07 {
+		width: 800px;
+
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	
+		margin: auto;
+		margin-top: 2%;
+	}
+	.content-07 {
+		background: url('/img/scroll_center.png') repeat-y top center;
+		padding: 52px 75px;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.content-07:before,
+	.content-07:after {
+		background: url('/img/scroll_top.png') no-repeat center top;
+		content: '';
+		height: 50px;
+		left: 0;
+		position: absolute;
+		top: -11px;
+		width: 100%;
+	}
+
+	.content-07:after {
+		background: url('/img/scroll_bottom.png') no-repeat center bottom;
+		bottom: -11px;
+		top: auto;
+	}
+	.mobile-07 {
+		font-size: 1.8em;
+	}
+	.headers-07 {
+		font-size: 1.7em;
+	}
+	.title-header {
+	}
+	.spacer-07 {
+		font-size: 1.2em;
+	}
+	#navbarNav {
+		font-size: 2.0em;
+	}
+	#username {
+		height: 85px;
+		text-align: center;
+		width: 50%;
+		font-size: 100%;
+	}
+	#usernamesubmit {
+		height: 85px;
+		width: 200px;
+		font-size: 100%;
+	}
+
+}
